@@ -645,12 +645,13 @@ body {
   box-shadow: 0 0 50px rgba(0, 229, 255, 0.15);
 }
 
-.video-wrapper iframe {
+.video-wrapper iframe, .video-wrapper .hero-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: contain; /* Ensure poster is fully visible */
 }
 
 .project-info {
