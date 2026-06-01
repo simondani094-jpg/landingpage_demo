@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Daniel Jebaraj | Creative Solutions</title>
+  <meta name="description" content="Professional video editing, motion graphics, visual effects, and AI generation services by Daniel Jebaraj." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor" id="cursor">
+    <div class="cursor-ring" id="cursor-ring"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-text" id="cursor-text"></div>
+  </div>
+  <div class="noise-overlay"></div>
+  <div class="bg-grid"></div>
+  <div class="particles-container" id="particles"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo"><span class="logo-text">DANIEL <span class="accent">JEBARAJ</span></span></div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="works.html" class="nav-link">Works</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-menu-btn" id="menu-btn"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="subpage-hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <p class="section-eyebrow" data-reveal>How I Can Help</p>
+    <h1 data-reveal>Creative <span class="gradient-text">Services</span></h1>
+    <p data-reveal>From initial concept to final cinematic delivery, I provide end-to-end visual solutions to elevate your brand or story.</p>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="section-padding" style="padding-top: 0;">
+    <div class="container">
+      <div class="services-grid">
+        
+        <div class="service-card" data-scroll-reveal>
+          <div class="service-icon"><i class="fas fa-film"></i></div>
+          <h3>Video Editing & Post-Production</h3>
+          <p class="body-text">End-to-end editing for short films, corporate videos, and social reels.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Multi-cam Editing</li>
+            <li><i class="fas fa-check"></i> Sound Design & Mixing</li>
+            <li><i class="fas fa-check"></i> DaVinci Color Grading</li>
+            <li><i class="fas fa-check"></i> Final Delivery (All Formats)</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-scroll-reveal>
+          <div class="service-icon"><i class="fas fa-wind"></i></div>
+          <h3>Motion Graphics & Animation</h3>
+          <p class="body-text">Dynamic visual elements that bring static concepts to life.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Logo Animation</li>
+            <li><i class="fas fa-check"></i> 2D Vector Animation</li>
+            <li><i class="fas fa-check"></i> UI/UX App Promos</li>
+            <li><i class="fas fa-check"></i> Product Explainers</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-scroll-reveal>
+          <div class="service-icon"><i class="fas fa-music"></i></div>
+          <h3>Lyric Videos & Typography</h3>
+          <p class="body-text">Engaging kinetic typography synchronized perfectly with your music.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Kinetic Typography</li>
+            <li><i class="fas fa-check"></i> 3D Camera Movements</li>
+            <li><i class="fas fa-check"></i> Custom Visualizer Elements</li>
+            <li><i class="fas fa-check"></i> Thematic Backgrounds</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-scroll-reveal>
+          <div class="service-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Visuals & UE5</h3>
+          <p class="body-text">Futuristic generative AI assets and Unreal Engine 5 virtual environments.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> AI Video Generation</li>
+            <li><i class="fas fa-check"></i> Concept Art Generation</li>
+            <li><i class="fas fa-check"></i> Unreal Engine Renders</li>
+            <li><i class="fas fa-check"></i> AI Voice & Lip Syncing</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section-padding" style="background: rgba(0,0,0,0.2);">
+    <div class="container">
+      <div class="section-header" style="text-align:center;" data-scroll-reveal>
+        <p class="section-eyebrow">Workflow</p>
+        <h2 class="section-title">The Creative <span class="gradient-text">Process</span></h2>
+      </div>
+      <div class="process-flow">
+        <div class="process-step" data-scroll-reveal>
+          <div class="step-num">1</div>
+          <h3>Discovery</h3>
+          <p>Understanding your vision, target audience, and project requirements.</p>
+        </div>
+        <div class="process-step" data-scroll-reveal>
+          <div class="step-num">2</div>
+          <h3>Concept</h3>
+          <p>Developing storyboards, style frames, and visual direction.</p>
+        </div>
+        <div class="process-step" data-scroll-reveal>
+          <div class="step-num">3</div>
+          <h3>Production</h3>
+          <p>The heavy lifting: editing, animating, grading, and sound design.</p>
+        </div>
+        <div class="process-step" data-scroll-reveal>
+          <div class="step-num">4</div>
+          <h3>Delivery</h3>
+          <p>Review rounds, final polish, and delivery in required formats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry Form -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header" style="text-align:center;" data-scroll-reveal>
+        <p class="section-eyebrow">Start a Project</p>
+        <h2 class="section-title">Project <span class="gradient-text">Inquiry</span></h2>
+        <p class="body-text" style="max-width:500px; margin: 0 auto;">Fill out the form below with your project details, and I'll get back to you within 24 hours.</p>
+      </div>
+
+      <div class="inquiry-section" data-scroll-reveal>
+        <form class="inquiry-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Inquiry Sent! I will contact you shortly.');">
+          <div class="form-group">
+            <label for="name">Your Name / Company</label>
+            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" class="form-control">
+              <option value="editing">Video Editing</option>
+              <option value="motion">Motion Graphics</option>
+              <option value="lyric">Lyric Video</option>
+              <option value="ai">AI / Unreal Engine</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="details">Project Details</label>
+            <textarea id="details" class="form-control" placeholder="Tell me about your project timeline, budget, and vision..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary magnetic" style="width: 100%; justify-content: center;">
+            <span>Send Inquiry</span>
+            <i class="fas fa-paper-plane btn-arrow"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-premium">
+    <div class="container footer-inner">
+      <span class="footer-logo">DANIEL <span class="accent">JEBARAJ</span></span>
+      <p class="footer-copy">&copy; <span id="year"></span> Daniel Jebaraj. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/_it.s_me_dj/" target="_blank" class="footer-social magnetic"><i class="fab fa-instagram"></i></a>
+        <a href="https://in.linkedin.com/in/daniel-mariya-thomas-a54a65322" target="_blank" class="footer-social magnetic"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/916383006957" target="_blank" class="footer-social magnetic"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.behance.net/dj_king_desiger" target="_blank" class="footer-social magnetic"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
