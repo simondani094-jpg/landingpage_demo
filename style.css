@@ -625,45 +625,167 @@ body {
   margin-top: 50px;
 }
 
-/* Responsive */
+/* Responsive Mobile Styles (Apple iOS & Android Optimized) */
 @media (max-width: 768px) {
-  .glitch {
-    font-size: 2.5rem;
+  /* Hero Section Mobile Scaling */
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 120px 20px 60px 20px;
+    display: flex;
+    align-items: center;
   }
 
-  .grid-2 {
-    grid-template-columns: 1fr;
+  .hero-pretitle {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+
+  .hero-title .bracket-name {
+    font-size: 1.8rem;
+    display: inline;
+    margin-left: 5px;
+    margin-top: 0;
+  }
+
+  .hero-tagline {
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  /* Stack CTAs vertically on mobile */
+  .cta-group {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .cta-group .btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 14px 20px;
   }
 
   .stats-row {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
+    padding: 20px;
+    margin-top: 20px;
   }
 
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+
+  /* Prevent floating shapes from causing horizontal scroll on mobile viewports */
+  .abstract-shape {
+    display: none !important;
+  }
+
+  .orb-1 {
+    width: 250px;
+    height: 250px;
+    top: 5%;
+    left: -10%;
+  }
+
+  .orb-2 {
+    width: 280px;
+    height: 280px;
+    bottom: 5%;
+    right: -10%;
+  }
+
+  /* About Section Mobile Optimizations */
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-img {
+    width: 280px;
+    height: 280px;
+    box-shadow: 0 0 20px rgba(249, 92, 75, 0.15);
+  }
+
+  .floating-badge {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  .badge-1 {
+    top: 10%;
+    right: -10px;
+  }
+
+  .badge-2 {
+    bottom: 10%;
+    left: -10px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .bio.highlight {
+    padding-left: 15px;
+  }
+
+  /* Navbar Mobile Menu Drawer */
   .menu-toggle {
     display: block;
+    color: var(--text-light);
   }
 
   .nav-links {
     position: absolute;
     top: 70px;
     right: 0;
-    width: 200px;
-    background: rgba(23, 22, 22, 0.95);
+    width: 100%;
+    background: rgba(23, 22, 22, 0.98);
     flex-direction: column;
-    padding: 20px;
-    border-radius: 0 0 0 20px;
-    transform: translateX(100%);
-    transition: var(--transition);
+    padding: 30px 20px;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid rgba(249, 92, 75, 0.1);
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
   }
 
   .nav-links.active {
-    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .nav-links a {
-    margin: 10px 0;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .btn-nav {
+    border-color: var(--primary);
+    padding: 10px 0;
   }
 }
 
